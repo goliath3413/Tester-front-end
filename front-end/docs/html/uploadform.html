@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload form</title>
+   
+    <link rel="stylesheet" href="../css/uploadstyle.css">
+   <script src="../../back-end/upload.js" defer></script>
+</head>
+<body>
+    <a href="../public/index.html" style="text-decoration: none;"><p style="background-color:#E53935 ;width: 7vw;padding: 30px; color: white; font-size: 1rem;">Back to start page</p></a>
+    <h1>Upload form</h1>
+    <form id="radarForm">
+        <h2>Radar form</h2>
+        <div id="radarFields" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="massRadar">Mass:</label>
+            <input type="text" id="massRadar" name="massRadar" required>
+
+            <label for="guidanceRadar">Guidance:</label>
+            <input type="text" id="guidanceRadar" name="guidanceRadar" required>
+
+            <label for="signal">Signal:</label>
+            <input type="text" id="signal" name="signal" required>
+
+            <label for="lockRangeRadar">Lock Range:</label>
+            <input type="text" id="lockRangeRadar" name="lockRangeRadar" required>
+
+            <label for="launchRangeRadar">Launch Range:</label>
+            <input type="text" id="launchRangeRadar" name="launchRangeRadar" required>
+
+            <label for="maxSpeedRadar">Maximum Speed:</label>
+            <input type="text" id="maxSpeedRadar" name="maxSpeedRadar" required>
+
+            <label for="maxOverloadRadar">Maximum Overload:</label>
+            <input type="text" id="maxOverloadRadar" name="maxOverloadRadar" required>
+
+            <label for="guidanceTimeRadar">Missile Guidance Time:</label>
+            <input type="text" id="guidanceTimeRadar" name="guidanceTimeRadar" required>
+
+            <label for="explosiveMassRadar">Explosive Mass:</label>
+            <input type="text" id="explosiveMassRadar" name="explosiveMassRadar" required>
+        </div>
+        <button type="button" onclick="submitRadarForm()">Upload Radar Missile</button>
+    </form>
+
+    <form id="irForm">
+        <h2>IR form</h2>
+        <div id="irFields" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mass">Mass:</label>
+            <input type="text" id="mass" name="mass" required>
+
+            <label for="aspect">Aspect:</label>
+            <input type="text" id="aspect" name="aspect" required>
+
+            <label for="rearAspectLockRange">Lock Range (Rear Aspect):</label>
+            <input type="text" id="rearAspectLockRange" name="rearAspectLockRange" required>
+
+            <div id="allAspectFields" >
+            <label for="lockRangeAll">Lock Range (All Aspect):</label>
+            <input type="text" id="lockRangeAll" name="lockRangeAll" required>
+            </div>
+
+            <label for="launchRange">Launch Range:</label>
+            <input type="text" id="launchRange" name="launchRange" required>
+
+            <label for="maxSpeed">Maximum Speed:</label>
+            <input type="text" id="maxSpeed" name="maxSpeed" required>
+
+            <label for="maxOverload">Maximum Overload:</label>
+            <input type="text" id="maxOverload" name="maxOverload" required>
+
+            <label for="guidanceTime">Missile Guidance Time:</label>
+            <input type="text" id="guidanceTime" name="guidanceTime" required>
+
+            <label for="explosiveMass">Explosive Mass:</label>
+            <input type="text" id="explosiveMass" name="explosiveMass" required>
+        </div>
+        <button type="button" onclick="submitIRForm()">Upload IR Missile</button>
+    </form>
+
+    <form id="airToGroundForm">
+        <h2>Air to Ground</h2>
+        <div id="airToGroundFields" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="massAirToGround">Mass:</label>
+            <input type="text" id="massAirToGround" name="massAirToGround" required>
+
+            <label for="guidanceAirToGround">Guidance:</label>
+            <input type="text" id="guidanceAirToGround" name="guidanceAirToGround" required>
+
+            <label for="maxSpeedAirToGround">Maximum Speed:</label>
+            <input type="text" id="maxSpeedAirToGround" name="maxSpeedAirToGround" required>
+
+            <label for="guidanceTimeAirToGround">Missile Guidance Time:</label>
+            <input type="text" id="guidanceTimeAirToGround" name="guidanceTimeAirToGround" required>
+
+            <label for="firingRange">Firing Range:</label>
+            <input type="text" id="firingRange" name="firingRange" required>
+
+            <label for="explosiveMass">Explosive Mass</label>
+            <input type="text" id="explosiveMass" name="explosiveMass" required>
+
+            <label for="armorPenetration">Armor Penetration:</label>
+            <input type="text" id="armorPenetration" name="armorPenetration" required>
+        </div>
+        <button type="button" onclick="submitAirToGroundForm()">Upload A-G Missile</button>
+    </form>
+</body>
+</html>

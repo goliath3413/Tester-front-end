@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Home {
+    font-size: 1.5vw;
+    display: flex;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+.Home a{
+    color: white;
+    
+}
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+.grain {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.grain-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    pointer-events: none;
+    z-index: -1;
+}
+.home-middle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    z-index: 100;
+    margin-top: 10%;
+    font-weight: bold;
+}
+.container1 {
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+    left: -35vw;
+    top: 0;
+}
+.container1 img {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 80% 0, 50% 100%, 0 100%);
+    object-fit: cover;
+}
+.container2 {
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    right: -35vw;
+    top: 0;
+}
+.container2 img{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 20% 100%);
+    object-fit: cover;
+}
+.multi-option li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.special-piramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.special-piramid li {
+    display: inline-block;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*  Burger menu */
+.burger-menu {
+    background-color: #052038;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu-items li {
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+
+/*  A-A -------------------------------------------------------- */
+
+.a-a {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-decoration: none;
+}
+.a-a li a{
+    color: white;
+}
+.a-a h2 a {
+    color: black;
+}
+.namevslist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* flag */
+.flag-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flag-container a{
+    color: black;
+}
+.flag-container img {
+    width: 100%;
+    height: 5vh;
+
+}
+.flag-item {
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+#missilesList {
+    width: 100%;
+}
+#missilesList ul{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    text-align: center;
+    justify-items: center;
+}
+#missilesList li{
+    background-color: #171717;
+    color: #CFD8DC;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+
+
+
+/* missile specific page */
+
+.bruh {
+    display: flex;
+    flex-direction: row;
+
+}
+#missileDetails {
+    font-size: 1rem;align-items: center;position: relative;
+    width: 50%;
+    left: 21vw;
+    padding: 40px;
+    border: 2px black solid;
+}
+
+#goBackButton {
+    padding: 20px;width: 10vw;margin-top: 20px;
+    margin-left: 20px;color:#171717 ; background-color: #E53935;border: #2F2F2F 1px solid;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.imagebox {
+    padding: 40px;
+}
+
+
+
+/* ---- info ---- */
+
+.info {
+    width: 80%;
+    left: 5%;
+    position: relative;
+}
